@@ -9,7 +9,7 @@ public class Categoria {
 	private String sexoCategoria;
 	private Campeonato campeonato;
 	int testeMerge;
-	
+	String xablau;
 	
 	public Categoria(int codigoCategoria)
 	{
