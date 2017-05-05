@@ -9,7 +9,6 @@ public class Equipe {
 	private Date dataFuncadacao;
 	private String cidade;
 	private ArrayList<Usuario> diretores;
-	private int teste;
 		
 	public String getNome() {
 		return nome;
