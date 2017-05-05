@@ -7,6 +7,7 @@ public class Time {
 	private String tecnico;
 	private String categoria;
 	private String jogador;
+	private int teste;
 	
 	public int getMatricula() {
 		return matricula;
