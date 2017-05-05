@@ -14,20 +14,7 @@ public class Campeonato {
 	private int periodoFimInscricao;
 	private ArrayList<Categoria> categorias = new ArrayList<Categoria>();
 	private int testeMerge;
-	
-	
-	public int getTesteMerge() {
-		return testeMerge;
-	}
-
-
-	public void setTesteMerge(int testeMerge) {
-		this.testeMerge = testeMerge;
-	}
-
-	
-	
-	
+	private float teste;
 
 	public Campeonato(int codigo)
 	{
