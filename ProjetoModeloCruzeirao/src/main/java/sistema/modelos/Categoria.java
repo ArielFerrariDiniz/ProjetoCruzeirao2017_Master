@@ -8,6 +8,7 @@ public class Categoria {
 	private int qntMaxJogadores;
 	private String sexoCategoria;
 	private Campeonato campeonato;
+	int testeMerge;
 	
 	
 	public Categoria(int codigoCategoria)
