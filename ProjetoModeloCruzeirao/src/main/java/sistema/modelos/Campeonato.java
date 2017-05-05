@@ -13,8 +13,7 @@ public class Campeonato {
 	private int periodoInicioInscricao;
 	private int periodoFimInscricao;
 	private ArrayList<Categoria> categorias = new ArrayList<Categoria>();
-	private int testeMerge;
-	private float teste;
+	private int testeeeemaldito;
 
 	public Campeonato(int codigo)
 	{
