@@ -3,27 +3,27 @@ package sistema.service;
 import java.util.ArrayList;
 import java.util.List;
 
-import sistema.modelos.Time;
+import sistema.modelos.Equipe;
 
 public class TimeService {
 	
-	private ArrayList <Time> times = new ArrayList<Time>();
+	private ArrayList <Equipe> times = new ArrayList<Equipe>();
 	
 	public TimeService()
 	{
 	}
 	
-	public void salvar(Time time)
+	public void salvar(Equipe time)
 	{
 	    times.add(time);
 	}
 
-	public List<Time> getTimes()
+	public List<Equipe> getTimes()
 	{
 		return times;
 	}
 
-	public void removerTime(Time time) {
+	public void removerTime(Equipe time) {
 		// TODO Auto-generated method stub
 		times.remove(time);
 	}

@@ -5,21 +5,21 @@ import java.util.List;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
 
-import sistema.modelos.Time;
+import sistema.modelos.Equipe;
 import sistema.service.TimeService;
 
 @ManagedBean
 @SessionScoped
 public class TimeManagedBean {
 	
-	private Time time = new Time();
+	private Equipe time = new Equipe();
 	private TimeService service = new TimeService();
-	private Time timeAtual;
+	private Equipe timeAtual;
 	
 	public void salvar()
 	{
 		service.salvar(time);
-		time = new Time();	
+		time = new Equipe();	
 	}
 	
 	public String salvarEditar()
@@ -27,25 +27,25 @@ public class TimeManagedBean {
 		return "cadastroTime";
 	}
 
-	public Time getTime() {
+	public Equipe getTime() {
 		return time;
 	}
 
-	public void setTime(Time time) {
+	public void setTime(Equipe time) {
 		this.time = time;
 	}
 
-	public List<Time> getTimes() {
+	public List<Equipe> getTimes() {
 		return service.getTimes();
 	}
 	
-	public String descricaoTime(Time time)
+	public String descricaoTime(Equipe time)
 	{
 		this.timeAtual = time;
 		return "descricaoTime";
 	}
 	
-	public String editarTime(Time time)
+	public String editarTime(Equipe time)
 	{
 		this.timeAtual = time;
 		return "editarTime";
@@ -63,15 +63,15 @@ public class TimeManagedBean {
 		this.service = service;
 	}
 
-	public Time getTimeAtual() {
+	public Equipe getTimeAtual() {
 		return timeAtual;
 	}
 
-	public void setTimeAtual(Time timeAtual) {
+	public void setTimeAtual(Equipe timeAtual) {
 		this.timeAtual = timeAtual;
 	}
 	
-	public void removerTime(Time time)
+	public void removerTime(Equipe time)
 	{
 		service.removerTime(time);
 	}

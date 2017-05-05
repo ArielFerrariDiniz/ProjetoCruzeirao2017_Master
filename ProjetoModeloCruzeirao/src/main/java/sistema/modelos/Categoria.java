@@ -1,51 +1,34 @@
 package sistema.modelos;
 
+import java.util.ArrayList;
+
 public class Categoria {
-	
-	private int codigoCategoria;
-	private String tipoCategoria;
-	private int qntMinJogadores;
-	private int qntMaxJogadores;
-	private String sexoCategoria;
+		
+	private String nome;
+	private int nascidosApartirDe;
+	private ArrayList<Inscricao> inscricoes;
 	private Campeonato campeonato;
-	int testeMerge;
-	String xablau;
-	
-	public Categoria(int codigoCategoria)
-	{
-		this.codigoCategoria = codigoCategoria;
+	private ArrayList<Fase> fases;
+	private int minJogadores;
+	private int maxJogadores;
+	private Enum sexo;
+	public String getNome() {
+		return nome;
 	}
-	
-	
-	public int getCodigoCategoria() {
-		return codigoCategoria;
+	public void setNome(String nome) {
+		this.nome = nome;
 	}
-	public void setCodigoCategoria(int codigoCategoria) {
-		this.codigoCategoria = codigoCategoria;
+	public int getNascidosApartirDe() {
+		return nascidosApartirDe;
 	}
-	public String getTipoCategoria() {
-		return tipoCategoria;
+	public void setNascidosApartirDe(int nascidosApartirDe) {
+		this.nascidosApartirDe = nascidosApartirDe;
 	}
-	public void setTipoCategoria(String tipoCategoria) {
-		this.tipoCategoria = tipoCategoria;
+	public ArrayList<Inscricao> getInscricoes() {
+		return inscricoes;
 	}
-	public int getQntMinJogadores() {
-		return qntMinJogadores;
-	}
-	public void setQntMinJogadores(int qntMinJogadores) {
-		this.qntMinJogadores = qntMinJogadores;
-	}
-	public int getQntMaxJogadores() {
-		return qntMaxJogadores;
-	}
-	public void setQntMaxJogadores(int qntMaxJogadores) {
-		this.qntMaxJogadores = qntMaxJogadores;
-	}
-	public String getSexoCategoria() {
-		return sexoCategoria;
-	}
-	public void setSexoCategoria(String sexoCategoria) {
-		this.sexoCategoria = sexoCategoria;
+	public void setInscricoes(ArrayList<Inscricao> inscricoes) {
+		this.inscricoes = inscricoes;
 	}
 	public Campeonato getCampeonato() {
 		return campeonato;
@@ -53,4 +36,30 @@ public class Categoria {
 	public void setCampeonato(Campeonato campeonato) {
 		this.campeonato = campeonato;
 	}
+	public ArrayList<Fase> getFases() {
+		return fases;
+	}
+	public void setFases(ArrayList<Fase> fases) {
+		this.fases = fases;
+	}
+	public int getMinJogadores() {
+		return minJogadores;
+	}
+	public void setMinJogadores(int minJogadores) {
+		this.minJogadores = minJogadores;
+	}
+	public int getMaxJogadores() {
+		return maxJogadores;
+	}
+	public void setMaxJogadores(int maxJogadores) {
+		this.maxJogadores = maxJogadores;
+	}
+	public Enum getSexo() {
+		return sexo;
+	}
+	public void setSexo(Enum sexo) {
+		this.sexo = sexo;
+	}	
+	
+	
 }
