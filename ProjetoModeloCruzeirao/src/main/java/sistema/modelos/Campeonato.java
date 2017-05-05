@@ -14,6 +14,7 @@ public class Campeonato {
 	private int periodoFimInscricao;
 	private ArrayList<Categoria> categorias = new ArrayList<Categoria>();
 	private int testeeeemaldito;
+	private int deucerto;
 
 	public Campeonato(int codigo)
 	{
